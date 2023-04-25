@@ -1,11 +1,12 @@
-import Title from "./Title";
+import Title from "../components/Title";
+import Description from "./Description";
 
-const Content = () => {
+const Content = (props) => {
   return (
-    <>
-      <Title />
-      <Description />
-    </>
+    <section className="rectangle">
+      <Title name={props.name} />
+      <Description text={props.text} />
+    </section>
   );
 };
 
